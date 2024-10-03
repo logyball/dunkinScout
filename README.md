@@ -11,11 +11,21 @@ even at stores less than a mile apart. Save some money with this tool!
 # Easy Usage (if you do not want to install Python)
 (Windows only, for now)
 1. Download dunkScout.exe from the Releases
-2. Simply double click and it should prompt you for the latitude, longitude,
+2. Simply double click and it should prompt you for your zip code OR latitude/longitude,
 item name, and distance.
 
+# Docker Usage
+
+```sh
+➜ make build-docker
+➜ make run-docker
+```
+
 # Usage
-python dunkScout.py [-lat LAT] [-long LONG] [-item ITEM] [-dist DIST]
+```sh
+➜ pip install -r requirements.txt
+➜ python dunkScout.py [-zip ZIP] [-lat LAT] [-long LONG] [-item ITEM] [-dist DIST]
+```
   * Example: python dunkScout.py -lat 42.161621 -long -71.147720 -item "Original Blend Iced Coffee" -dist 2
     - lat: Latitude for your current location
     - long: Longitude for your current location
@@ -26,8 +36,7 @@ You can also launch it with no arguments, and you will be prompted for each argu
 
 # Installation/Dependencies
 Download and install [Python](https://www.python.org/downloads/) >=3.6, and add it
-to your environment variables as appropriate for your OS. All modules are
-standard library and so should not require further installation.
+to your environment variables as appropriate for your OS. Use pip to install dependencies.
 
 
 # Acknowledgments

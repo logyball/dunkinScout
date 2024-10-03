@@ -1,0 +1,6 @@
+# Ignore Everything
+*
+
+# Except the good stuff
+!dunkScout.py
+!requirements.txt
